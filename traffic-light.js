@@ -1,5 +1,4 @@
 
-
 function allLightsOff(){
   document.querySelectorAll('.light').forEach(function(light){
     light.classList.remove('on');
@@ -25,9 +24,11 @@ function caution(){
 }
 
 function captureTimeChange(cb){
-
   var timeLeft = document.querySelector("#timeLeft");
   var number = document.querySelector("#number");
+
+  console.log(timeLeft);
+
   timeLeft.addEventListener("keyup", function(evt){
       var num = Number(evt.target.value);
       number.innerHTML = num;
@@ -38,9 +39,7 @@ function captureTimeChange(cb){
 }
 
 
-
-/*
-var counter = 60;
+/*var counter = 60;
 setInterval(function(){
   counter--;
   if (counter > 40){
@@ -55,5 +54,5 @@ setInterval(function(){
   if (counter === 0){
     counter = 60;
   }
-}, 500);
-*/
+},
+500);*/

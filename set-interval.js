@@ -9,7 +9,8 @@ function showNumber(num){
 }
 
 function interval(){
-        counter++;
+        counter++;        
+
         // write some code here
 
         showNumber(counter);
